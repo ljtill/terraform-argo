@@ -1,1 +1,1 @@
-# terraform-argo
+# Argo
