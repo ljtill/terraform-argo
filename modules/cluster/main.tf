@@ -16,6 +16,7 @@ resource "azurerm_kubernetes_cluster" "main" {
   default_node_pool {
     name                        = "nodepool1"
     vm_size                     = var.cluster.vm_size
+    os_disk_type                = "Ephemeral"
     temporary_name_for_rotation = "nodepool"
     node_count                  = var.cluster.node_count
     zones                       = ["1", "2", "3"]
